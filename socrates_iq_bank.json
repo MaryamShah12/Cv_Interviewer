@@ -1,0 +1,1027 @@
+{
+  "version": "1.0",
+  "agent": "socrates",
+  "total_questions": 60,
+  "questions": [
+    {
+      "id": "LOG-001",
+      "category": "logical",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "All developers are analysts. All analysts are employees. Which statement must be true?",
+      "options": [
+        "Some employees are not analysts",
+        "All developers are employees",
+        "No analyst is a developer",
+        "All employees are developers"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "Developers are a subset of analysts, which are a subset of employees, so every developer is an employee. The reverse need not hold."
+    },
+    {
+      "id": "LOG-002",
+      "category": "logical",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Some engineers are artists. All artists are creative. Which statement must be true?",
+      "options": [
+        "All creative people are engineers",
+        "Some engineers are creative",
+        "All engineers are creative",
+        "No engineer is creative"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "The engineers who are artists are also creative, so at least some engineers are creative. Nothing is said about the other engineers."
+    },
+    {
+      "id": "LOG-003",
+      "category": "logical",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Ravi is taller than Sam. Sam is taller than Tara. Who is the shortest?",
+      "options": [
+        "Ravi",
+        "Sam",
+        "Tara",
+        "Cannot be determined"
+      ],
+      "correct_index": 2,
+      "shuffle_options": false,
+      "explanation": "Ravi > Sam > Tara, so Tara is the shortest."
+    },
+    {
+      "id": "LOG-004",
+      "category": "logical",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "All roses are flowers. Some flowers fade quickly. Which statement is definitely true?",
+      "options": [
+        "Some roses fade quickly",
+        "Every rose is a flower",
+        "No rose fades quickly",
+        "All roses fade quickly"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "This is stated directly in the first premise. The quickly fading flowers may or may not be roses."
+    },
+    {
+      "id": "LOG-005",
+      "category": "logical",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Pointing to a man, Anna says, \"He is the son of my mother's only brother.\" How is the man related to Anna?",
+      "options": [
+        "Uncle",
+        "Cousin",
+        "Brother",
+        "Nephew"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "Anna's mother's brother is her maternal uncle, and his son is her cousin."
+    },
+    {
+      "id": "LOG-006",
+      "category": "logical",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "A is the brother of B. B is the sister of C. C is the father of D. How is A related to D?",
+      "options": [
+        "Uncle",
+        "Cousin",
+        "Grandfather",
+        "Father"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "A, B and C are siblings. C is D's father, so A (C's brother) is D's uncle."
+    },
+    {
+      "id": "LOG-007",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Five friends A, B, C, D and E sit in a row. A sits to the right of C but to the left of B. D sits at the extreme right end. E sits immediately to the left of D. Who sits in the middle?",
+      "options": [
+        "B",
+        "E",
+        "C",
+        "A"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "D is 5th and E is 4th. C, A, B must fill positions 1 to 3 in that order: C, A, B, E, D. The middle (3rd) is B."
+    },
+    {
+      "id": "LOG-008",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "If it rains, the match is cancelled. The match was not cancelled. What can we conclude?",
+      "options": [
+        "It rained",
+        "It did not rain",
+        "The match was played in the rain",
+        "Cannot be determined"
+      ],
+      "correct_index": 1,
+      "shuffle_options": false,
+      "explanation": "This is contrapositive reasoning. If rain always leads to cancellation, no cancellation means no rain."
+    },
+    {
+      "id": "LOG-009",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "In a certain code, MANGO is written as NBOHP. How is APPLE written in that code?",
+      "options": [
+        "ZOOKD",
+        "BPQMF",
+        "BQQMF",
+        "BQQLF"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "Each letter is shifted one place forward (M to N, A to B, ...). APPLE becomes B-Q-Q-M-F."
+    },
+    {
+      "id": "LOG-010",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "P is older than Q but younger than R. S is older than R. T is younger than Q. Who is the oldest?",
+      "options": [
+        "R",
+        "T",
+        "P",
+        "S"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "The ordering is S > R > P > Q > T, so S is the oldest."
+    },
+    {
+      "id": "LOG-011",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Statement: A company has banned mobile phones during team meetings to improve focus. Which assumption is implicit in this decision?",
+      "options": [
+        "Mobile phone use reduces focus during meetings",
+        "All meetings will now end earlier",
+        "Every employee owns a mobile phone",
+        "The company's profits will double"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "The ban only makes sense if the company believes phone use hurts focus. The other options are not required by the decision."
+    },
+    {
+      "id": "LOG-012",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Meera walks 5 km north, turns right and walks 3 km, then turns right again and walks 5 km. How far and in which direction is she from her starting point?",
+      "options": [
+        "5 km south",
+        "13 km north",
+        "3 km west",
+        "3 km east"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "North 5 km then south 5 km cancel out. The only net displacement is the 3 km walked east."
+    },
+    {
+      "id": "LOG-013",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "No manager is an intern. Some interns are students. Which statement must be true?",
+      "options": [
+        "No student is a manager",
+        "Some students are not managers",
+        "All managers are students",
+        "All students are interns"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "The students who are interns cannot be managers, so at least some students are not managers. We cannot say anything about all students."
+    },
+    {
+      "id": "LOG-014",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "All candidates who passed the coding round attended the aptitude round. Nobody who attended the aptitude round was rejected on the spot. Ria was rejected on the spot. What follows?",
+      "options": [
+        "Ria passed the coding round but skipped aptitude",
+        "Ria did not pass the coding round",
+        "Ria attended the aptitude round",
+        "Cannot be determined"
+      ],
+      "correct_index": 1,
+      "shuffle_options": false,
+      "explanation": "Rejected on the spot means she did not attend aptitude, and not attending aptitude means she did not pass coding."
+    },
+    {
+      "id": "LOG-015",
+      "category": "logical",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "In a code language, 'sky blue is' is written as 'ka ma ta', 'blue bird flies' as 'ma ra sa', and 'sky flies high' as 'ka sa ba'. What is the code for 'bird'?",
+      "options": [
+        "ba",
+        "ta",
+        "ra",
+        "ka"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "'blue' is common to sentences 1 and 2 (ma). 'flies' is common to 2 and 3 (sa). So in sentence 2 the remaining code, ra, is 'bird'."
+    },
+    {
+      "id": "LOG-016",
+      "category": "logical",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "On an island, knights always tell the truth and knaves always lie. A says: \"B is a knave.\" B says: \"A and I are of the same type.\" What are A and B?",
+      "options": [
+        "Both are knights",
+        "Both are knaves",
+        "A is a knight, B is a knave",
+        "A is a knave, B is a knight"
+      ],
+      "correct_index": 2,
+      "shuffle_options": false,
+      "explanation": "If A were a knave, B would be a knight, but then B's statement (same type) would be false, which a knight cannot say. So A is a knight and B is a knave, and B's false statement is consistent."
+    },
+    {
+      "id": "LOG-017",
+      "category": "logical",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "Exactly one of three friends A, B and C broke a window. A says: \"B did it.\" B says: \"C did it.\" C says: \"B is lying.\" Exactly one of the three statements is false. Who broke the window?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "Cannot be determined"
+      ],
+      "correct_index": 1,
+      "shuffle_options": false,
+      "explanation": "B's and C's statements contradict each other, so exactly one of them is false. That uses up the single false statement, so A's statement is true: B did it. Then B's statement is false and C's is true, which is consistent."
+    },
+    {
+      "id": "LOG-018",
+      "category": "logical",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "Four interviews P, Q, R and S are held on four consecutive days, Monday to Thursday, one per day. P is held before S. R is held exactly one day after S. Q is held exactly one day after P. Which interview is on Thursday?",
+      "options": [
+        "S",
+        "Q",
+        "P",
+        "R"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "Only P=Mon, Q=Tue, S=Wed, R=Thu satisfies all conditions. Other placements of P push S or R beyond Thursday."
+    },
+    {
+      "id": "QNT-001",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "What is 15% of 240?",
+      "options": [
+        "36",
+        "40",
+        "32",
+        "30"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "0.15 x 240 = 36."
+    },
+    {
+      "id": "QNT-002",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "A train travels at 60 km/h for 2.5 hours. How far does it travel?",
+      "options": [
+        "120 km",
+        "140 km",
+        "160 km",
+        "150 km"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "Distance = speed x time = 60 x 2.5 = 150 km."
+    },
+    {
+      "id": "QNT-003",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "What is the average of 12, 18, 25, 35 and 40?",
+      "options": [
+        "30",
+        "24",
+        "28",
+        "26"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "The sum is 130 and 130 / 5 = 26."
+    },
+    {
+      "id": "QNT-004",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "A jacket marked at Rs. 800 is sold at a 25% discount. What is the selling price?",
+      "options": [
+        "Rs. 600",
+        "Rs. 700",
+        "Rs. 650",
+        "Rs. 550"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "Discount = 200, so the price is 800 - 200 = Rs. 600."
+    },
+    {
+      "id": "QNT-005",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Rs. 160 is divided between two people in the ratio 3:5. What is the larger share?",
+      "options": [
+        "Rs. 80",
+        "Rs. 120",
+        "Rs. 60",
+        "Rs. 100"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "There are 8 parts, each worth 20. The larger share is 5 x 20 = Rs. 100."
+    },
+    {
+      "id": "QNT-006",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "What is the simple interest on Rs. 5,000 at 8% per annum for 3 years?",
+      "options": [
+        "Rs. 1,600",
+        "Rs. 1,500",
+        "Rs. 1,200",
+        "Rs. 1,000"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "SI = P x R x T / 100 = 5000 x 8 x 3 / 100 = Rs. 1,200."
+    },
+    {
+      "id": "QNT-007",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "If today is Wednesday, what day of the week will it be after 100 days?",
+      "options": [
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "100 = 14 x 7 + 2, so the day moves forward by 2. Wednesday + 2 = Friday."
+    },
+    {
+      "id": "QNT-008",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Pipe A can fill a tank in 12 hours and pipe B can empty it in 18 hours. If both are opened together, how long will the empty tank take to fill?",
+      "options": [
+        "30 hours",
+        "40 hours",
+        "48 hours",
+        "36 hours"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "Net rate = 1/12 - 1/18 = 1/36 of the tank per hour, so it takes 36 hours."
+    },
+    {
+      "id": "QNT-009",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "A is twice as old as B. Five years ago, A was three times as old as B. How old is A now?",
+      "options": [
+        "15",
+        "30",
+        "25",
+        "20"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "Let B = x, A = 2x. Then 2x - 5 = 3(x - 5), so x = 10 and A = 20."
+    },
+    {
+      "id": "QNT-010",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "6 workers complete a job in 10 days. How many days will 4 workers take, working at the same rate?",
+      "options": [
+        "15",
+        "20",
+        "18",
+        "12"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "Total work = 60 worker-days. 60 / 4 = 15 days."
+    },
+    {
+      "id": "QNT-011",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "A car travels from A to B at 60 km/h and returns at 40 km/h. What is its average speed for the whole trip?",
+      "options": [
+        "50 km/h",
+        "52 km/h",
+        "45 km/h",
+        "48 km/h"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "Average speed over equal distances is 2 x 60 x 40 / (60 + 40) = 48 km/h, not the simple mean of 50."
+    },
+    {
+      "id": "QNT-012",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "A shopkeeper sells an item for Rs. 720 and makes a 20% profit. What was the cost price?",
+      "options": [
+        "Rs. 600",
+        "Rs. 560",
+        "Rs. 576",
+        "Rs. 650"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "Selling price = 1.2 x cost, so cost = 720 / 1.2 = Rs. 600."
+    },
+    {
+      "id": "QNT-013",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Two fair dice are rolled. What is the probability that their sum is 7?",
+      "options": [
+        "1/9",
+        "5/36",
+        "1/12",
+        "1/6"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "There are 6 favourable outcomes out of 36: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). 6/36 = 1/6."
+    },
+    {
+      "id": "QNT-014",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "In how many ways can a committee of 3 be chosen from 6 people?",
+      "options": [
+        "120",
+        "30",
+        "20",
+        "15"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "C(6,3) = 6! / (3! x 3!) = 20."
+    },
+    {
+      "id": "QNT-015",
+      "category": "quantitative",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "How many litres of water must be added to 20 litres of a 40% acid solution to make it a 25% solution?",
+      "options": [
+        "10",
+        "15",
+        "8",
+        "12"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "Acid = 8 L. For 25% concentration the total must be 8 / 0.25 = 32 L, so add 32 - 20 = 12 L of water."
+    },
+    {
+      "id": "QNT-016",
+      "category": "quantitative",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "Two trains of length 150 m and 100 m run in opposite directions at 60 km/h and 40 km/h. How long do they take to completely cross each other?",
+      "options": [
+        "12 s",
+        "9 s",
+        "8 s",
+        "10 s"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "Relative speed = 100 km/h = 100 x 5/18 m/s. Distance = 250 m, so time = 250 x 18 / 500 = 9 s."
+    },
+    {
+      "id": "QNT-017",
+      "category": "quantitative",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "How many distinct arrangements are there of the letters of the word LEVEL?",
+      "options": [
+        "24",
+        "30",
+        "60",
+        "120"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "There are 5 letters with L repeated twice and E repeated twice: 5! / (2! x 2!) = 30."
+    },
+    {
+      "id": "QNT-018",
+      "category": "quantitative",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "A can finish a job in 10 days and B in 15 days. They work together for 3 days, after which A leaves. How many more days will B need to finish the job alone?",
+      "options": [
+        "7.5 days",
+        "5 days",
+        "9 days",
+        "6 days"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "Together they do 3 x (1/10 + 1/15) = 1/2 of the job. The remaining half takes B (1/2) / (1/15) = 7.5 days."
+    },
+    {
+      "id": "PAT-001",
+      "category": "pattern",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Find the next number: 5, 10, 20, 40, ?",
+      "options": [
+        "60",
+        "100",
+        "80",
+        "70"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "Each term is double the previous one."
+    },
+    {
+      "id": "PAT-002",
+      "category": "pattern",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Find the next number: 1, 4, 9, 16, ?",
+      "options": [
+        "20",
+        "24",
+        "25",
+        "36"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "These are perfect squares: 1, 2, 3, 4 squared, so the next is 5 squared = 25."
+    },
+    {
+      "id": "PAT-003",
+      "category": "pattern",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Find the next number: 2, 6, 12, 20, 30, ?",
+      "options": [
+        "40",
+        "48",
+        "36",
+        "42"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "The differences are 4, 6, 8, 10, so the next difference is 12 and 30 + 12 = 42."
+    },
+    {
+      "id": "PAT-004",
+      "category": "pattern",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Find the next letter: A, C, E, G, ?",
+      "options": [
+        "I",
+        "J",
+        "H",
+        "K"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "Letters skip one each time: A, C, E, G, I."
+    },
+    {
+      "id": "PAT-005",
+      "category": "pattern",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Which one does not belong: Python, Java, HTML, C++?",
+      "options": [
+        "Java",
+        "HTML",
+        "C++",
+        "Python"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "HTML is a markup language. The others are programming languages."
+    },
+    {
+      "id": "PAT-006",
+      "category": "pattern",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Find the odd one out: 9, 16, 25, 36, 48 (choose from the options).",
+      "options": [
+        "25",
+        "16",
+        "36",
+        "48"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "9, 16, 25 and 36 are perfect squares. 48 is not."
+    },
+    {
+      "id": "PAT-007",
+      "category": "pattern",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Find the next number: 1, 1, 2, 3, 5, 8, ?",
+      "options": [
+        "11",
+        "13",
+        "12",
+        "15"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "Fibonacci sequence: each term is the sum of the previous two (5 + 8 = 13)."
+    },
+    {
+      "id": "PAT-008",
+      "category": "pattern",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Find the next number: 2, 3, 5, 7, 11, 13, ?",
+      "options": [
+        "17",
+        "15",
+        "21",
+        "19"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "These are consecutive prime numbers. The next prime after 13 is 17."
+    },
+    {
+      "id": "PAT-009",
+      "category": "pattern",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Find the next number: 1, 2, 6, 24, 120, ?",
+      "options": [
+        "720",
+        "480",
+        "600",
+        "240"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "These are factorials (1!, 2!, 3!, 4!, 5!), so the next is 6! = 720."
+    },
+    {
+      "id": "PAT-010",
+      "category": "pattern",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Find the next pair: AZ, BY, CX, DW, ?",
+      "options": [
+        "EW",
+        "EV",
+        "EU",
+        "FV"
+      ],
+      "correct_index": 1,
+      "shuffle_options": true,
+      "explanation": "The first letter moves forward and the second moves backward each time: E and V."
+    },
+    {
+      "id": "PAT-011",
+      "category": "pattern",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "Find the next number: 4, 6, 12, 14, 28, 30, ?",
+      "options": [
+        "60",
+        "58",
+        "32",
+        "62"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "The pattern alternates +2 and x2: 4+2=6, x2=12, +2=14, x2=28, +2=30, x2=60."
+    },
+    {
+      "id": "PAT-012",
+      "category": "pattern",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "Find the next number: 3, 8, 18, 38, 78, ?",
+      "options": [
+        "160",
+        "156",
+        "158",
+        "148"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "Each term = previous x 2 + 2. 78 x 2 + 2 = 158."
+    },
+    {
+      "id": "DAT-001",
+      "category": "data_interpretation",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Monthly sales (in thousands): Jan = 40, Feb = 50, Mar = 45, Apr = 60. Which month had the highest sales?",
+      "options": [
+        "April",
+        "January",
+        "March",
+        "February"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "April's value of 60 is the largest."
+    },
+    {
+      "id": "DAT-002",
+      "category": "data_interpretation",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Daily store visitors: Mon = 120, Tue = 150, Wed = 90, Thu = 180. What is the total number of visitors over the four days?",
+      "options": [
+        "540",
+        "520",
+        "600",
+        "560"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "120 + 150 + 90 + 180 = 540."
+    },
+    {
+      "id": "DAT-003",
+      "category": "data_interpretation",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "A monthly budget of Rs. 1,20,000 is split as: Rent 30%, Food 25%, Travel 15%, Savings 30%. How much is spent on Food?",
+      "options": [
+        "Rs. 30,000",
+        "Rs. 18,000",
+        "Rs. 36,000",
+        "Rs. 25,000"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "25% of 1,20,000 = Rs. 30,000."
+    },
+    {
+      "id": "DAT-004",
+      "category": "data_interpretation",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Runs scored in three matches. Team A: 45, 55, 65. Team B: 50, 52, 60. Which team has the higher average, and by how much?",
+      "options": [
+        "Team A by 1",
+        "Team B by 1",
+        "Team A by 2",
+        "Both averages are equal"
+      ],
+      "correct_index": 0,
+      "shuffle_options": false,
+      "explanation": "Team A: 165 / 3 = 55. Team B: 162 / 3 = 54. Team A is higher by 1."
+    },
+    {
+      "id": "DAT-005",
+      "category": "data_interpretation",
+      "difficulty": "easy",
+      "marks": 1,
+      "time_limit_sec": 45,
+      "question": "Marks out of 100: Maths = 80, Science = 70, English = 90. What is the average percentage?",
+      "options": [
+        "85%",
+        "78%",
+        "80%",
+        "75%"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "(80 + 70 + 90) / 3 = 80."
+    },
+    {
+      "id": "DAT-006",
+      "category": "data_interpretation",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Annual revenue (Rs. lakh): 2021 = 200, 2022 = 250, 2023 = 300. Which year showed the higher percentage growth over its previous year?",
+      "options": [
+        "2022",
+        "2023",
+        "Both are equal",
+        "Cannot be determined"
+      ],
+      "correct_index": 0,
+      "shuffle_options": false,
+      "explanation": "Both years add 50, but 50/200 = 25% is larger than 50/250 = 20%."
+    },
+    {
+      "id": "DAT-007",
+      "category": "data_interpretation",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "A company's total revenue is Rs. 5,00,000. Product A contributes 40%, Product B 35% and Product C the rest. What is the revenue from Product C?",
+      "options": [
+        "Rs. 1,25,000",
+        "Rs. 1,50,000",
+        "Rs. 1,00,000",
+        "Rs. 1,75,000"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "C contributes 100 - 40 - 35 = 25%, and 25% of 5,00,000 = Rs. 1,25,000."
+    },
+    {
+      "id": "DAT-008",
+      "category": "data_interpretation",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Headcount by department: Engineering = 60, Sales = 40, HR = 20, Operations = 30. What percentage of employees are NOT in Engineering?",
+      "options": [
+        "66.7%",
+        "40%",
+        "50%",
+        "60%"
+      ],
+      "correct_index": 3,
+      "shuffle_options": true,
+      "explanation": "Total = 150. Non-Engineering = 90, and 90 / 150 = 60%."
+    },
+    {
+      "id": "DAT-009",
+      "category": "data_interpretation",
+      "difficulty": "medium",
+      "marks": 1,
+      "time_limit_sec": 60,
+      "question": "Quarterly production (units): Q1: A=100, B=110. Q2: A=120, B=100. Q3: A=90, B=130. Q4: A=150, B=140. In how many quarters did B produce more than A?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "B is higher in Q1 (110 > 100) and Q3 (130 > 90) only."
+    },
+    {
+      "id": "DAT-010",
+      "category": "data_interpretation",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "Website visits: Mon = 200, Tue = 260, Wed = 220, Thu = 330, Fri = 396. On which day was the percentage increase over the previous day the highest?",
+      "options": [
+        "Friday",
+        "Wednesday",
+        "Thursday",
+        "Tuesday"
+      ],
+      "correct_index": 2,
+      "shuffle_options": true,
+      "explanation": "Tue +30%, Wed -15.4%, Thu +50%, Fri +20%. Thursday has the highest increase."
+    },
+    {
+      "id": "DAT-011",
+      "category": "data_interpretation",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "Class A has 30 students with an average score of 60. Class B has 20 students with an average score of 80. What is the combined average score?",
+      "options": [
+        "68",
+        "72",
+        "70",
+        "65"
+      ],
+      "correct_index": 0,
+      "shuffle_options": true,
+      "explanation": "Total marks = 30 x 60 + 20 x 80 = 3400. Divided by 50 students = 68."
+    },
+    {
+      "id": "DAT-012",
+      "category": "data_interpretation",
+      "difficulty": "hard",
+      "marks": 1,
+      "time_limit_sec": 90,
+      "question": "Revenue and cost (Rs. lakh): 2021: R=80, C=60. 2022: R=100, C=70. 2023: R=120, C=90. In which year was the profit percentage (on cost) the highest?",
+      "options": [
+        "2021",
+        "2022",
+        "2023",
+        "All equal"
+      ],
+      "correct_index": 1,
+      "shuffle_options": false,
+      "explanation": "Profit % = profit / cost: 2021 = 20/60 = 33.3%, 2022 = 30/70 = 42.9%, 2023 = 30/90 = 33.3%."
+    }
+  ]
+}

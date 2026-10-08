@@ -1,0 +1,40 @@
+# LangChain / LangGraph
+langchain
+langgraph
+langchain-community
+
+# LLM providers
+google-genai
+groq
+mistralai
+ollama
+
+# FastAPI
+fastapi
+uvicorn
+
+# PDF processing
+pypdf
+pdfplumber
+
+# Data / ML basics
+numpy
+pandas
+scikit-learn
+
+# Environment variables
+python-dotenv
+
+# HTTP / API utilities
+requests
+httpx
+
+# Useful for structured data
+pydantic
+
+pymupdf
+python-docx
+pydantic
+langgraph
+langchain-groq
+python-dotenv

@@ -1,0 +1,103 @@
+{
+  "personal_info": {
+    "full_name": "SARA MALIK",
+    "email": "sara.malik@example.com",
+    "phone": "+92-321-7654321",
+    "location": "Lahore, Punjab",
+    "linkedin": "linkedin.com/in/saramalik-data",
+    "github": "",
+    "portfolio": ""
+  },
+  "summary": "Detail-oriented analyst with 5 years of experience turning messy data into decisions. Strong in SQL, dashboards and stakeholder storytelling.",
+  "skills": {
+    "technical": [
+      "SQL",
+      "Power BI",
+      "Tableau",
+      "Excel",
+      "Python",
+      "pandas",
+      "NumPy",
+      "R",
+      "Google Analytics"
+    ],
+    "tools": [],
+    "soft_skills": [
+      "Problem solving",
+      "Storytelling",
+      "Stakeholder management"
+    ]
+  },
+  "education": [
+    {
+      "degree": "MS Data Science",
+      "institution": "LUMS, Lahore",
+      "start_date": "2022",
+      "end_date": "2024",
+      "gpa": "3.7 / 4.0"
+    },
+    {
+      "degree": "BBA",
+      "institution": "University of the Punjab",
+      "start_date": "2015",
+      "end_date": "2019",
+      "gpa": null
+    }
+  ],
+  "work_experience": [
+    {
+      "job_title": "Senior Data Analyst",
+      "company": "Mazaar Retail Group",
+      "start_date": "2022-08",
+      "end_date": null,
+      "is_current": true,
+      "description": "Built 12 Power BI dashboards used by regional managers. Automated weekly reporting with Python, saving 15 hrs/week."
+    },
+    {
+      "job_title": "Data Analyst",
+      "company": "Zameen Insights",
+      "start_date": "2019-08",
+      "end_date": "2022-07",
+      "is_current": false,
+      "description": "Cleaned and modelled survey data for 40+ client reports. Introduced SQL-based QA checks."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Customer Churn Dashboard",
+      "description": "Interactive Tableau dashboard predicting churn risk segments for a telecom dataset.",
+      "technologies": [
+        "Tableau"
+      ],
+      "link": null
+    },
+    {
+      "name": "Sales Forecasting Model",
+      "description": "Time-series forecasting in Python (Prophet) for retail demand.",
+      "technologies": [
+        "Python",
+        "Prophet"
+      ],
+      "link": null
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Data Analytics Professional Certificate",
+      "issuer": "Coursera",
+      "date": "2021"
+    },
+    {
+      "name": "Microsoft PL-300 Power BI Data Analyst",
+      "issuer": "Microsoft",
+      "date": "2023-05"
+    }
+  ],
+  "languages": [
+    "Urdu – Native",
+    "English – Fluent",
+    "Punjabi – Conversational"
+  ],
+  "years_of_experience": 5,
+  "parse_confidence": "high"
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "maryam",
+  "role": "AI Engineer",
+  "generated_at": "2026-10-08T13:06:13.639582+00:00",
+  "status": "ready",
+  "problem": {
+    "title": "Contextual Query Rewriting",
+    "statement": "In conversational AI systems, especially those involving Retrieval-Augmented Generation (RAG), follow-up questions often lack sufficient context to be understood independently. To accurately retrieve relevant documents, these queries need to be rewritten by incorporating information from the preceding chat history. Your task is to implement a function that takes a list of past conversation turns (alternating user and AI messages) and a new user query, then rewrites the new query to be self-contained and contextually rich. The rewriting process should concatenate the last AI response and the new user query, preceded by a clear instruction to an LLM to rewrite the query.",
+    "examples": [
+      {
+        "input": "history = [\"User: What is the capital of France?\", \"AI: The capital of France is Paris.\"], new_query = \"What about Germany?\"",
+        "output": "Given the previous AI response: \"The capital of France is Paris.\", rewrite the following user query to be a standalone question: \"What about Germany?\"",
+        "explanation": "The new query \"What about Germany?\" is ambiguous on its own. By prepending the last AI response and an instruction, it becomes clear that the user is asking about the capital of Germany."
+      },
+      {
+        "input": "history = [\"User: Tell me about large language models.\", \"AI: Large language models (LLMs) are deep learning models that can understand and generate human-like text.\", \"User: How do they work?\", \"AI: LLMs work by predicting the next word in a sequence based on the words that came before it.\"], new_query = \"What are some common applications?\"",
+        "output": "Given the previous AI response: \"LLMs work by predicting the next word in a sequence based on the words that came before it.\", rewrite the following user query to be a standalone question: \"What are some common applications?\"",
+        "explanation": "The function correctly identifies the last AI response and uses it to provide context for the new query, making it suitable for an LLM to rewrite into a self-contained question about LLM applications."
+      },
+      {
+        "input": "history = [], new_query = \"What is the weather like today?\"",
+        "output": "What is the weather like today?",
+        "explanation": "If there is no prior conversation history, the new query is already self-contained and should be returned as is, without any prefix."
+      }
+    ],
+    "constraints": [
+      "The `history` list will contain an even number of strings, representing alternating user and AI messages, starting with a user message.",
+      "The `new_query` will always be a non-empty string.",
+      "The output should be a single string.",
+      "Assume the instruction prefix is fixed: \"Given the previous AI response: \\\"<LAST_AI_RESPONSE>\\\", rewrite the following user query to be a standalone question: \\\"<NEW_QUERY>\\\"\""
+    ],
+    "concepts_tested": [
+      "String manipulation",
+      "Conditional logic",
+      "List indexing/slicing",
+      "Handling edge cases (empty history)"
+    ],
+    "time_estimate_min": 10,
+    "role": "AI Engineer"
+  }
+}

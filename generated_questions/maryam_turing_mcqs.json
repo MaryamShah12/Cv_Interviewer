@@ -1,0 +1,95 @@
+{
+  "role": "AI Engineer",
+  "mcqs": [
+    {
+      "question": "In your 'Interview Prep Agent' project, you use LangGraph and SQLite to persist session history and track weak topics. If the agent needs to dynamically adjust its internal state (e.g., a user's 'mastery score' for a topic) based on real-time interaction and ensure this updated state is immediately available for the next turn and persisted across sessions, which LangGraph feature or pattern would be most suitable?",
+      "option_a": "Implement a custom LangGraph Checkpointer that serializes and deserializes the agent's graph state to and from SQLite.",
+      "option_b": "Re-initialize the agent's state from scratch at the beginning of each user interaction, ignoring previous session data.",
+      "option_c": "Store all dynamic state in global Python variables, relying on the OS to manage persistence.",
+      "option_d": "Pass the entire session history as part of every prompt to the LLM, letting the LLM infer the current state.",
+      "correct_option": "a",
+      "explanation": "LangGraph's Checkpointer mechanism is designed precisely for persisting and restoring the agent's graph state, making it ideal for stateful agents that need to remember context and progress across sessions. A custom implementation using SQLite would integrate well with the project's existing data store."
+    },
+    {
+      "question": "Your 'PrivatePDF MCP Server' uses FAISS for semantic search on PDF content. When dealing with very long documents, you observe that relevant information is sometimes missed or diluted in the search results. Which strategy would most effectively improve the precision and recall of semantic search for long documents without significantly increasing processing time for individual queries?",
+      "option_a": "Increase the embedding dimension of the Sentence Transformer model to capture more nuance.",
+      "option_b": "Switch from FAISS to a keyword-based search engine like Elasticsearch for better long-document handling.",
+      "option_c": "Implement a hierarchical indexing approach, where document sections are indexed, and then individual chunks within relevant sections are searched.",
+      "option_d": "Process the entire PDF as a single large chunk for embedding and FAISS indexing.",
+      "correct_option": "c",
+      "explanation": "Hierarchical indexing allows the system to first narrow down the search to relevant sections of a long document, and then perform a more granular search within those sections. This improves both precision (by focusing on relevant areas) and recall (by not diluting signals across an entire document) without re-embedding the whole document for every query."
+    },
+    {
+      "question": "In your 'Video RAG Chat' project, you use MMR (Maximal Marginal Relevance) retrieval to surface diverse, non-repetitive context from YouTube video transcripts. If users frequently complain that the answers, while diverse, sometimes lack depth on a specific sub-topic within the video, what adjustment to your MMR strategy would you consider first?",
+      "option_a": "Increase the total number of chunks retrieved by MMR, regardless of diversity.",
+      "option_b": "Increase the diversity parameter (lambda) in MMR to prioritize even more distinct chunks.",
+      "option_c": "Switch from MMR to a simple top-K similarity search to get the most relevant chunks.",
+      "option_d": "Decrease the diversity parameter (lambda) in MMR to allow for more similar but potentially relevant chunks to be retrieved.",
+      "correct_option": "d",
+      "explanation": "MMR balances relevance and diversity. If answers lack depth on a sub-topic, it suggests that highly relevant but somewhat similar chunks (which might provide more detail on that sub-topic) are being excluded due to the diversity constraint. Decreasing the diversity parameter (lambda) would allow more emphasis on relevance, potentially bringing in those deeper, related chunks."
+    },
+    {
+      "question": "Your 'Agency Sphere' project uses an AHP-inspired task assignment model. A critical challenge arises when a high-priority task needs to be assigned, but the top-ranked team member according to AHP is already at 100% workload capacity. How would you modify the AHP model to incorporate this workload constraint effectively without simply discarding the AHP's skill-based ranking?",
+      "option_a": "Implement a separate, post-AHP filtering step that removes any team member exceeding a workload threshold.",
+      "option_b": "Temporarily remove overloaded team members from the pool of candidates for AHP evaluation.",
+      "option_c": "Introduce 'workload capacity' as an additional criterion in the AHP hierarchy, with a high weight, to penalize overloaded team members.",
+      "option_d": "Manually override the AHP recommendation for high-workload individuals, assigning to the next available person.",
+      "correct_option": "c",
+      "explanation": "AHP (Analytic Hierarchy Process) is a framework for multi-criteria decision-making. The most effective way to integrate a new constraint like workload is to incorporate it as another criterion within the AHP hierarchy itself. By assigning a high weight to workload capacity, the model can naturally penalize overloaded individuals while still considering their skills and other factors, leading to a more balanced recommendation."
+    },
+    {
+      "question": "The 'PrivatePDF MCP Server' uses YAML templates for zero-shot extraction on similar PDFs. You encounter a new set of PDFs that are structurally identical to a templated type, but the specific field names (e.g., 'Invoice Number' vs. 'Ref ID') have changed. What is the most efficient way to adapt your system to extract data from these new PDFs without creating entirely new templates or requiring manual intervention for each document?",
+      "option_a": "Create a new YAML template for every minor variation in field names.",
+      "option_b": "Manually edit the YAML template for each new PDF to reflect the updated field names.",
+      "option_c": "Develop a pre-processing step that uses an LLM to map new field names to existing template field names before extraction.",
+      "option_d": "Disable the YAML template system and rely solely on LLM-based extraction for all PDFs.",
+      "correct_option": "c",
+      "explanation": "Leveraging an LLM in a pre-processing step to intelligently map new field names to the existing, known field names in your YAML templates is the most efficient and scalable solution. This allows the system to adapt to minor variations without requiring new templates for every change, maintaining the benefits of structured extraction."
+    },
+    {
+      "question": "Your 'Interview Prep Agent' uses a hybrid scoring pipeline: BGE embeddings for clear answers and LLM fallback for ambiguous ones to cut costs. You notice that some 'borderline' answers, which could be scored by BGE with minor adjustments, are still being sent to the more expensive LLM. How would you refine this hybrid approach to reduce LLM calls for these cases without sacrificing accuracy?",
+      "option_a": "Implement a 'confidence score' for BGE's similarity match, sending only answers below a certain confidence to the LLM.",
+      "option_b": "Use a smaller, cheaper LLM for all fallback cases, regardless of ambiguity level.",
+      "option_c": "Increase the similarity threshold for BGE, making it more selective and pushing more answers to the LLM.",
+      "option_d": "Replace BGE embeddings with a simpler keyword matching algorithm to reduce computation.",
+      "correct_option": "a",
+      "explanation": "Implementing a confidence score for BGE's similarity match allows for a more nuanced decision. Instead of a hard threshold, you can define a range where BGE is 'less confident' but still potentially correct. By only falling back to the LLM for answers below a certain confidence, you can capture more borderline cases with the cheaper BGE and reduce unnecessary LLM calls."
+    },
+    {
+      "question": "When evaluating your RAG Pipelines using RAGAS, you consistently observe low 'context relevance' scores. This metric indicates that the retrieved context often contains irrelevant information for answering the query. Which of the following is the most effective approach to address this issue?",
+      "option_a": "Refine your document chunking strategy to create more semantically coherent and smaller chunks.",
+      "option_b": "Adjust the prompt to explicitly instruct the LLM to ignore irrelevant information in the context.",
+      "option_c": "Switch to a larger, more capable LLM for generation, assuming it can filter out irrelevant context.",
+      "option_d": "Increase the number of retrieved documents or chunks to provide more context to the LLM.",
+      "correct_option": "a",
+      "explanation": "Low context relevance often stems from chunks containing too much extraneous information. Refining the chunking strategy to create smaller, more focused, and semantically coherent chunks ensures that each retrieved piece of context is highly relevant to a specific sub-topic, thereby improving the 'context relevance' score."
+    },
+    {
+      "question": "You are developing a complex agentic workflow using LangGraph, where the agent interacts with multiple external tools (e.g., database, API calls). How would you design the LangGraph state and conditional edges to robustly handle potential tool failures (e.g., API timeouts, invalid responses) and allow the agent to self-correct or retry without crashing the entire workflow?",
+      "option_a": "Define specific nodes for error handling, with conditional edges that route to these nodes if a tool returns an error status or an unexpected output format.",
+      "option_b": "Wrap every tool call in a try-except block and log the error, then terminate the agent's execution.",
+      "option_c": "Instruct the LLM in the prompt to anticipate and recover from tool errors, without explicit graph logic.",
+      "option_d": "Implement a global Python exception handler that catches all errors and restarts the LangGraph agent from the beginning.",
+      "correct_option": "a",
+      "explanation": "LangGraph's strength lies in its ability to define explicit state transitions and conditional logic. By creating dedicated error handling nodes and using conditional edges that trigger based on tool output (e.g., an 'error' flag, a specific status code, or an unexpected data structure), the agent can gracefully re-route, retry, or log the issue, making the workflow robust."
+    },
+    {
+      "question": "When developing the 'Interview Prep Agent', you need to ensure that the agent's responses are consistently high-quality and aligned with the user's specific role (e.g., 'Backend Engineer' vs. 'Data Scientist'). Which Prompt Engineering technique is most effective for maintaining this role-specific alignment across diverse user queries?",
+      "option_a": "Dynamically injecting the user's specified role into the system prompt at the beginning of each conversation.",
+      "option_b": "Using a single, generic system prompt for all roles and relying on the LLM's general knowledge.",
+      "option_c": "Fine-tuning a separate LLM for each specific role the agent supports.",
+      "option_d": "Limiting the agent's tool access to only tools relevant to a specific role.",
+      "correct_option": "a",
+      "explanation": "Dynamically injecting the user's role into the system prompt is a highly effective and flexible prompt engineering technique. It provides the LLM with crucial context for every interaction, guiding its responses to be consistently relevant and tailored to the specified role without the overhead of fine-tuning multiple models."
+    },
+    {
+      "question": "Your 'PrivatePDF MCP Server' (built with Flask and FastMCP) is deployed and handles requests for PDF processing. You observe that under moderate load, the server's response time for PDF extraction significantly increases, even though CPU and memory usage are not maxed out. What is the most likely bottleneck in this Python/Flask environment, and how would you address it?",
+      "option_a": "The database (PostgreSQL/MySQL/SQLite) is the bottleneck; optimize SQL queries.",
+      "option_b": "Python's Global Interpreter Lock (GIL) is limiting concurrency for I/O-bound PDF operations; implement asynchronous task processing.",
+      "option_c": "The LLM calls are too slow; switch to a faster LLM provider.",
+      "option_d": "The network bandwidth is insufficient; upgrade the server's network interface.",
+      "correct_option": "b",
+      "explanation": "In a Flask application handling I/O-bound tasks like PDF processing, Python's GIL can prevent true parallel execution of CPU-bound parts of the code, even if the overall task involves I/O. When multiple requests for heavy PDF processing hit the server, they can block each other. Implementing asynchronous task processing (e.g., using Celery with a message broker) offloads these long-running tasks from the main Flask thread, allowing the server to handle more requests concurrently and improving responsiveness."
+    }
+  ]
+}

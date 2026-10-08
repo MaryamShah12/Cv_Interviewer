@@ -1,0 +1,155 @@
+{
+  "personal_info": {
+    "full_name": "Maryam Shah",
+    "email": "maryamshah.990@gmail.com",
+    "phone": "+92 313 238 3694",
+    "location": "",
+    "linkedin": "linkedin.com/in/maryam-shah",
+    "github": "github.com/MaryamShah12",
+    "portfolio": ""
+  },
+  "summary": "Software Engineer specialising in LLM-powered systems, including RAG pipelines, agentic workflows and MCP servers. Shipped three independent AI projects in the past two months using LangChain, LangGraph and the Gemini API, each with clean documentation and a live GitHub. Comfortable working at the full LLM layer, including prompt design, retrieval strategies, hybrid evaluation and tool integration. Drawn to systems that are thoughtfully built and genuinely useful.",
+  "skills": {
+    "technical": [
+      "LangChain",
+      "LangGraph",
+      "RAG Pipelines",
+      "Agentic Workflows",
+      "MCP",
+      "Prompt Engineering",
+      "Gemini API",
+      "OpenAI API",
+      "FAISS",
+      "Sentence Transformers",
+      "HuggingFace",
+      "RAGAS",
+      "Python",
+      "JavaScript",
+      "Java",
+      "Flask",
+      "FastMCP",
+      "Streamlit",
+      "Pandas",
+      "NumPy",
+      "Plotly Dash",
+      "Matplotlib",
+      "PostgreSQL",
+      "MySQL",
+      "SQLite",
+      "SQLAlchemy"
+    ],
+    "tools": [
+      "Git",
+      "Jira"
+    ],
+    "soft_skills": []
+  },
+  "education": [
+    {
+      "degree": "B.E. Software Engineering",
+      "institution": "Mehran University of Engineering and Technology",
+      "start_date": "2021",
+      "end_date": "2025",
+      "gpa": "3.5 / 4.0"
+    },
+    {
+      "degree": "Intermediate — Pre-Engineering",
+      "institution": "Beaconhouse School System, Hyderabad",
+      "start_date": "2019",
+      "end_date": "2021",
+      "gpa": "Grade A1"
+    }
+  ],
+  "work_experience": [
+    {
+      "job_title": "Junior Project Coordinator",
+      "company": "TeamSolve",
+      "start_date": "2025-09",
+      "end_date": "2026-02",
+      "is_current": false,
+      "description": ""
+    },
+    {
+      "job_title": "Python Developer Intern",
+      "company": "Zetsol Software House",
+      "start_date": "2025-07",
+      "end_date": "2025-08",
+      "is_current": false,
+      "description": ""
+    },
+    {
+      "job_title": "Software Engineer",
+      "company": "Verge Systems Ltd.",
+      "start_date": "2024-06",
+      "end_date": "2024-12",
+      "is_current": false,
+      "description": "Led sprint cycles and daily stand‑ups; managed task assignment and delivery tracking across active engineering projects in Jira. Translated product requirements into scoped dev tasks and maintained sprint documentation throughout each cycle. Served as the primary liaison between engineering and stakeholders, collecting updates, flagging blockers and keeping delivery on track. Produced sprint release notes and meeting documentation consistently across all project cycles. Built analytics dashboards for SME clients using Plotly Dash and Pandas. Developed backend services with Flask and MySQL; wrote clean, well‑documented Python throughout. Wrote Python scripts for data processing and contributed to internal tooling across the project lifecycle. Maintained clean, well‑documented code across collaborative team projects."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Interview Prep Agent",
+      "description": "Stateful interview coaching agent on LangGraph; generates role‑specific roadmaps and targets the user's weakest topics each session. Hybrid scoring pipeline where BGE embeddings handle clear answers and LLM fallback covers ambiguous ones, cutting cost without sacrificing accuracy. Session history persists in SQLite so the agent retains weak‑topic context across runs and keeps revisiting them until performance improves.",
+      "technologies": [
+        "LangGraph",
+        "LangChain",
+        "Gemini",
+        "Sentence Transformers",
+        "SQLite",
+        "Streamlit"
+      ],
+      "link": null
+    },
+    {
+      "name": "PrivatePDF MCP Server",
+      "description": "Local MCP server giving Claude Desktop the ability to read, search and extract structured data from PDFs with everything processed locally, no documents sent to the cloud. Auto‑detects text‑based vs scanned PDFs; semantic search via FAISS, tables extracted as clean JSON. YAML template system lets Gemini analyse a document once; all future PDFs of that type extract with zero additional API calls.",
+      "technologies": [
+        "FastMCP",
+        "pdfplumber",
+        "Tesseract OCR",
+        "FAISS",
+        "Gemini API"
+      ],
+      "link": null
+    },
+    {
+      "name": "Video RAG Chat",
+      "description": "Conversational AI answering questions about any YouTube video, grounded in its transcript with accurate timestamp citations. MMR retrieval surfaces diverse, non‑repetitive context; follow‑up questions are rewritten with chat history so contextual queries always resolve correctly.",
+      "technologies": [
+        "LangChain",
+        "FAISS",
+        "Gemini",
+        "Streamlit",
+        "RAGAS"
+      ],
+      "link": null
+    },
+    {
+      "name": "Agency Sphere",
+      "description": "Agency management platform with AI‑powered contract generation; each clause includes a plain‑language explanation. AHP‑inspired task assignment model matches team members to work by skills, workload and priority level.",
+      "technologies": [
+        "Django",
+        "Gemini API",
+        "PostgreSQL"
+      ],
+      "link": null
+    },
+    {
+      "name": "HealthTrack",
+      "description": "Health metrics tracker with Pandas‑powered analytics, Matplotlib visualisations and a clean Tailwind interface built on a Flask/MySQL backend.",
+      "technologies": [
+        "Flask",
+        "Pandas",
+        "Matplotlib",
+        "SQLAlchemy",
+        "MySQL",
+        "Tailwind CSS"
+      ],
+      "link": null
+    }
+  ],
+  "certifications": [],
+  "languages": [],
+  "years_of_experience": null,
+  "parse_confidence": "high"
+}

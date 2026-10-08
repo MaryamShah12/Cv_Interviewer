@@ -1,0 +1,123 @@
+{
+  "personal_info": {
+    "full_name": "BILAL HUSSAIN",
+    "email": "bilal.hussain.dev@example.com",
+    "phone": "0312-5550199",
+    "location": "Hyderabad, Sindh, Pakistan",
+    "linkedin": "",
+    "github": "github.com/bilalh-codes",
+    "portfolio": ""
+  },
+  "summary": "Fresh graduate software engineer seeking an entry-level full-stack role.",
+  "skills": {
+    "technical": [
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Python",
+      "OpenCV",
+      "Tailwind CSS",
+      "Git",
+      "GitHub",
+      "Postman",
+      "Figma"
+    ],
+    "tools": [
+      "Postman",
+      "Figma"
+    ],
+    "soft_skills": [
+      "Teamwork",
+      "Time management"
+    ]
+  },
+  "education": [
+    {
+      "degree": "BS Software Engineering",
+      "institution": "Mehran University of Engineering & Technology, Jamshoro",
+      "start_date": "2021",
+      "end_date": "2025",
+      "gpa": "3.21 / 4.00"
+    },
+    {
+      "degree": "Intermediate (Pre-Engineering)",
+      "institution": "Govt. Degree College Hyderabad",
+      "start_date": "2019",
+      "end_date": "2021",
+      "gpa": null
+    }
+  ],
+  "work_experience": [
+    {
+      "job_title": "Software Engineering Intern",
+      "company": "CodeCrafters Pvt Ltd",
+      "start_date": "2024-06",
+      "end_date": "2024-08",
+      "is_current": false,
+      "description": "Worked on React frontend components and fixed 20+ bugs in a Node.js API."
+    },
+    {
+      "job_title": "Freelance Web Developer",
+      "company": "",
+      "start_date": "2023",
+      "end_date": null,
+      "is_current": true,
+      "description": "Built landing pages and small business websites for local clients."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Smart Attendance System (Final Year Project)",
+      "description": "Face-recognition based attendance system using OpenCV and Python with a React dashboard.",
+      "technologies": [
+        "OpenCV",
+        "Python",
+        "React.js"
+      ],
+      "link": null
+    },
+    {
+      "name": "E-Commerce Store",
+      "description": "MERN stack store with cart, JWT auth and Stripe test payments.",
+      "technologies": [
+        "MongoDB",
+        "Express",
+        "React.js",
+        "Node.js",
+        "JWT",
+        "Stripe"
+      ],
+      "link": "bilal-shop.vercel.app"
+    },
+    {
+      "name": "Weather App",
+      "description": "Simple React app using OpenWeather API.",
+      "technologies": [
+        "React.js",
+        "OpenWeather API"
+      ],
+      "link": null
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Meta Front-End Developer Professional Certificate",
+      "issuer": "Coursera",
+      "date": "2024"
+    },
+    {
+      "name": "Responsive Web Design",
+      "issuer": "freeCodeCamp",
+      "date": "2022"
+    }
+  ],
+  "languages": [
+    "Sindhi",
+    "Urdu",
+    "English"
+  ],
+  "years_of_experience": null,
+  "parse_confidence": "high"
+}

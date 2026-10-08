@@ -1,0 +1,78 @@
+{
+  "candidate_id": "Bilal_CV",
+  "role": "full stack engineer",
+  "cv_path": "Bilal_CV.pdf",
+  "generated_at": "2026-10-05T19:28:49.955973+00:00",
+  "status": "completed",
+  "all_stages_completed": true,
+  "total_score": 6,
+  "total_marks": 20,
+  "stages": {
+    "cv_parse": {
+      "status": "completed",
+      "output_path": "parsed_cvs\\Bilal_CV_cv.json",
+      "parse_confidence": "high"
+    },
+    "turing": {
+      "status": "completed",
+      "score": 3,
+      "total_marks": 10,
+      "percentage": 30.0,
+      "result_path": "generated_questions\\Bilal_CV_turing_result.json",
+      "questions_path": "generated_questions\\Bilal_CV_turing_mcqs.json"
+    },
+    "socrates": {
+      "status": "completed",
+      "score": 3,
+      "total_marks": 10,
+      "percentage": 30.0,
+      "category_scores": {
+        "logical": {
+          "correct": 1,
+          "total": 3,
+          "marks": 1,
+          "max_marks": 3
+        },
+        "quantitative": {
+          "correct": 0,
+          "total": 3,
+          "marks": 0,
+          "max_marks": 3
+        },
+        "data_interpretation": {
+          "correct": 0,
+          "total": 2,
+          "marks": 0,
+          "max_marks": 2
+        },
+        "pattern": {
+          "correct": 2,
+          "total": 2,
+          "marks": 2,
+          "max_marks": 2
+        }
+      },
+      "difficulty_scores": {
+        "easy": {
+          "correct": 1,
+          "total": 4,
+          "marks": 1,
+          "max_marks": 4
+        },
+        "medium": {
+          "correct": 2,
+          "total": 4,
+          "marks": 2,
+          "max_marks": 4
+        },
+        "hard": {
+          "correct": 0,
+          "total": 2,
+          "marks": 0,
+          "max_marks": 2
+        }
+      },
+      "result_path": "socrates_results\\Bilal_CV_socrates_result.json"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "candidate_id": "maryam",
+  "role": "AI Engineer",
+  "cv_path": "maryam.pdf",
+  "generated_at": "2026-10-08T13:15:49.259230+00:00",
+  "status": "completed",
+  "all_stages_completed": true,
+  "total_score": 27,
+  "total_marks": 40,
+  "stages": {
+    "cv_parse": {
+      "status": "completed",
+      "output_path": "parsed_cvs\\maryam_cv.json",
+      "parse_confidence": "high"
+    },
+    "turing": {
+      "status": "completed",
+      "score": 5,
+      "total_marks": 10,
+      "percentage": 50.0,
+      "result_path": "generated_questions\\maryam_turing_result.json",
+      "questions_path": "generated_questions\\maryam_turing_mcqs.json"
+    },
+    "socrates": {
+      "status": "completed",
+      "score": 2,
+      "total_marks": 10,
+      "percentage": 20.0,
+      "category_scores": {
+        "data_interpretation": {
+          "correct": 1,
+          "total": 2,
+          "marks": 1,
+          "max_marks": 2
+        },
+        "logical": {
+          "correct": 0,
+          "total": 3,
+          "marks": 0,
+          "max_marks": 3
+        },
+        "quantitative": {
+          "correct": 1,
+          "total": 3,
+          "marks": 1,
+          "max_marks": 3
+        },
+        "pattern": {
+          "correct": 0,
+          "total": 2,
+          "marks": 0,
+          "max_marks": 2
+        }
+      },
+      "difficulty_scores": {
+        "easy": {
+          "correct": 2,
+          "total": 4,
+          "marks": 2,
+          "max_marks": 4
+        },
+        "medium": {
+          "correct": 0,
+          "total": 4,
+          "marks": 0,
+          "max_marks": 4
+        },
+        "hard": {
+          "correct": 0,
+          "total": 2,
+          "marks": 0,
+          "max_marks": 2
+        }
+      },
+      "result_path": "socrates_results\\maryam_socrates_result.json"
+    },
+    "lovelace": {
+      "status": "completed",
+      "score": 20,
+      "total_marks": 20,
+      "percentage": 100.0,
+      "test_marks": 12.0,
+      "review_marks": 8.0,
+      "attempts_used": 1,
+      "result_path": "lovelace_results\\maryam_lovelace_result.json",
+      "problem_path": "lovelace_results\\maryam_lovelace_problem.json"
+    }
+  }
+}

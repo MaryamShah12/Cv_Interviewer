@@ -1,0 +1,267 @@
+{
+  "candidate_id": "Bilal_CV",
+  "round": "iq_analytical",
+  "generated_at": "2026-10-05T19:28:49.948305+00:00",
+  "bank_warnings": [],
+  "status": "completed",
+  "score": 3,
+  "total_marks": 10,
+  "category_scores": {
+    "logical": {
+      "correct": 1,
+      "total": 3,
+      "marks": 1,
+      "max_marks": 3
+    },
+    "quantitative": {
+      "correct": 0,
+      "total": 3,
+      "marks": 0,
+      "max_marks": 3
+    },
+    "data_interpretation": {
+      "correct": 0,
+      "total": 2,
+      "marks": 0,
+      "max_marks": 2
+    },
+    "pattern": {
+      "correct": 2,
+      "total": 2,
+      "marks": 2,
+      "max_marks": 2
+    }
+  },
+  "difficulty_scores": {
+    "easy": {
+      "correct": 1,
+      "total": 4,
+      "marks": 1,
+      "max_marks": 4
+    },
+    "medium": {
+      "correct": 2,
+      "total": 4,
+      "marks": 2,
+      "max_marks": 4
+    },
+    "hard": {
+      "correct": 0,
+      "total": 2,
+      "marks": 0,
+      "max_marks": 2
+    }
+  },
+  "review": [
+    {
+      "question_number": 1,
+      "question_id": "LOG-003",
+      "category": "logical",
+      "difficulty": "easy",
+      "question": "Ravi is taller than Sam. Sam is taller than Tara. Who is the shortest?",
+      "options": {
+        "a": "Ravi",
+        "b": "Sam",
+        "c": "Tara",
+        "d": "Cannot be determined"
+      },
+      "your_answer": "a",
+      "your_answer_text": "Ravi",
+      "correct_option": "c",
+      "correct_answer_text": "Tara",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Ravi > Sam > Tara, so Tara is the shortest."
+    },
+    {
+      "question_number": 2,
+      "question_id": "LOG-009",
+      "category": "logical",
+      "difficulty": "medium",
+      "question": "In a certain code, MANGO is written as NBOHP. How is APPLE written in that code?",
+      "options": {
+        "a": "BPQMF",
+        "b": "ZOOKD",
+        "c": "BQQMF",
+        "d": "BQQLF"
+      },
+      "your_answer": "c",
+      "your_answer_text": "BQQMF",
+      "correct_option": "c",
+      "correct_answer_text": "BQQMF",
+      "is_correct": true,
+      "marks": 1,
+      "max_marks": 1,
+      "explanation": "Each letter is shifted one place forward (M to N, A to B, ...). APPLE becomes B-Q-Q-M-F."
+    },
+    {
+      "question_number": 3,
+      "question_id": "QNT-006",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "question": "What is the simple interest on Rs. 5,000 at 8% per annum for 3 years?",
+      "options": {
+        "a": "Rs. 1,500",
+        "b": "Rs. 1,000",
+        "c": "Rs. 1,200",
+        "d": "Rs. 1,600"
+      },
+      "your_answer": "d",
+      "your_answer_text": "Rs. 1,600",
+      "correct_option": "c",
+      "correct_answer_text": "Rs. 1,200",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "SI = P x R x T / 100 = 5000 x 8 x 3 / 100 = Rs. 1,200."
+    },
+    {
+      "question_number": 4,
+      "question_id": "QNT-010",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "question": "6 workers complete a job in 10 days. How many days will 4 workers take, working at the same rate?",
+      "options": {
+        "a": "20",
+        "b": "15",
+        "c": "12",
+        "d": "18"
+      },
+      "your_answer": "a",
+      "your_answer_text": "20",
+      "correct_option": "b",
+      "correct_answer_text": "15",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Total work = 60 worker-days. 60 / 4 = 15 days."
+    },
+    {
+      "question_number": 5,
+      "question_id": "DAT-011",
+      "category": "data_interpretation",
+      "difficulty": "hard",
+      "question": "Class A has 30 students with an average score of 60. Class B has 20 students with an average score of 80. What is the combined average score?",
+      "options": {
+        "a": "68",
+        "b": "65",
+        "c": "70",
+        "d": "72"
+      },
+      "your_answer": "d",
+      "your_answer_text": "72",
+      "correct_option": "a",
+      "correct_answer_text": "68",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Total marks = 30 x 60 + 20 x 80 = 3400. Divided by 50 students = 68."
+    },
+    {
+      "question_number": 6,
+      "question_id": "DAT-007",
+      "category": "data_interpretation",
+      "difficulty": "medium",
+      "question": "A company's total revenue is Rs. 5,00,000. Product A contributes 40%, Product B 35% and Product C the rest. What is the revenue from Product C?",
+      "options": {
+        "a": "Rs. 1,75,000",
+        "b": "Rs. 1,00,000",
+        "c": "Rs. 1,25,000",
+        "d": "Rs. 1,50,000"
+      },
+      "your_answer": "a",
+      "your_answer_text": "Rs. 1,75,000",
+      "correct_option": "c",
+      "correct_answer_text": "Rs. 1,25,000",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "C contributes 100 - 40 - 35 = 25%, and 25% of 5,00,000 = Rs. 1,25,000."
+    },
+    {
+      "question_number": 7,
+      "question_id": "LOG-001",
+      "category": "logical",
+      "difficulty": "easy",
+      "question": "All developers are analysts. All analysts are employees. Which statement must be true?",
+      "options": {
+        "a": "Some employees are not analysts",
+        "b": "All employees are developers",
+        "c": "All developers are employees",
+        "d": "No analyst is a developer"
+      },
+      "your_answer": "b",
+      "your_answer_text": "All employees are developers",
+      "correct_option": "c",
+      "correct_answer_text": "All developers are employees",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Developers are a subset of analysts, which are a subset of employees, so every developer is an employee. The reverse need not hold."
+    },
+    {
+      "question_number": 8,
+      "question_id": "PAT-004",
+      "category": "pattern",
+      "difficulty": "easy",
+      "question": "Find the next letter: A, C, E, G, ?",
+      "options": {
+        "a": "K",
+        "b": "H",
+        "c": "J",
+        "d": "I"
+      },
+      "your_answer": "d",
+      "your_answer_text": "I",
+      "correct_option": "d",
+      "correct_answer_text": "I",
+      "is_correct": true,
+      "marks": 1,
+      "max_marks": 1,
+      "explanation": "Letters skip one each time: A, C, E, G, I."
+    },
+    {
+      "question_number": 9,
+      "question_id": "PAT-010",
+      "category": "pattern",
+      "difficulty": "medium",
+      "question": "Find the next pair: AZ, BY, CX, DW, ?",
+      "options": {
+        "a": "EV",
+        "b": "EW",
+        "c": "EU",
+        "d": "FV"
+      },
+      "your_answer": "a",
+      "your_answer_text": "EV",
+      "correct_option": "a",
+      "correct_answer_text": "EV",
+      "is_correct": true,
+      "marks": 1,
+      "max_marks": 1,
+      "explanation": "The first letter moves forward and the second moves backward each time: E and V."
+    },
+    {
+      "question_number": 10,
+      "question_id": "QNT-016",
+      "category": "quantitative",
+      "difficulty": "hard",
+      "question": "Two trains of length 150 m and 100 m run in opposite directions at 60 km/h and 40 km/h. How long do they take to completely cross each other?",
+      "options": {
+        "a": "12 s",
+        "b": "9 s",
+        "c": "8 s",
+        "d": "10 s"
+      },
+      "your_answer": "c",
+      "your_answer_text": "8 s",
+      "correct_option": "b",
+      "correct_answer_text": "9 s",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Relative speed = 100 km/h = 100 x 5/18 m/s. Distance = 250 m, so time = 250 x 18 / 500 = 9 s."
+    }
+  ]
+}

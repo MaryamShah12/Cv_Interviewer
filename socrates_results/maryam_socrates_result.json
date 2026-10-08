@@ -1,0 +1,267 @@
+{
+  "candidate_id": "maryam",
+  "round": "iq_analytical",
+  "generated_at": "2026-10-08T13:06:08.614595+00:00",
+  "bank_warnings": [],
+  "status": "completed",
+  "score": 2,
+  "total_marks": 10,
+  "category_scores": {
+    "data_interpretation": {
+      "correct": 1,
+      "total": 2,
+      "marks": 1,
+      "max_marks": 2
+    },
+    "logical": {
+      "correct": 0,
+      "total": 3,
+      "marks": 0,
+      "max_marks": 3
+    },
+    "quantitative": {
+      "correct": 1,
+      "total": 3,
+      "marks": 1,
+      "max_marks": 3
+    },
+    "pattern": {
+      "correct": 0,
+      "total": 2,
+      "marks": 0,
+      "max_marks": 2
+    }
+  },
+  "difficulty_scores": {
+    "easy": {
+      "correct": 2,
+      "total": 4,
+      "marks": 2,
+      "max_marks": 4
+    },
+    "medium": {
+      "correct": 0,
+      "total": 4,
+      "marks": 0,
+      "max_marks": 4
+    },
+    "hard": {
+      "correct": 0,
+      "total": 2,
+      "marks": 0,
+      "max_marks": 2
+    }
+  },
+  "review": [
+    {
+      "question_number": 1,
+      "question_id": "DAT-003",
+      "category": "data_interpretation",
+      "difficulty": "easy",
+      "question": "A monthly budget of Rs. 1,20,000 is split as: Rent 30%, Food 25%, Travel 15%, Savings 30%. How much is spent on Food?",
+      "options": {
+        "a": "Rs. 30,000",
+        "b": "Rs. 36,000",
+        "c": "Rs. 18,000",
+        "d": "Rs. 25,000"
+      },
+      "your_answer": "a",
+      "your_answer_text": "Rs. 30,000",
+      "correct_option": "a",
+      "correct_answer_text": "Rs. 30,000",
+      "is_correct": true,
+      "marks": 1,
+      "max_marks": 1,
+      "explanation": "25% of 1,20,000 = Rs. 30,000."
+    },
+    {
+      "question_number": 2,
+      "question_id": "LOG-010",
+      "category": "logical",
+      "difficulty": "medium",
+      "question": "P is older than Q but younger than R. S is older than R. T is younger than Q. Who is the oldest?",
+      "options": {
+        "a": "R",
+        "b": "P",
+        "c": "S",
+        "d": "T"
+      },
+      "your_answer": "a",
+      "your_answer_text": "R",
+      "correct_option": "c",
+      "correct_answer_text": "S",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "The ordering is S > R > P > Q > T, so S is the oldest."
+    },
+    {
+      "question_number": 3,
+      "question_id": "DAT-010",
+      "category": "data_interpretation",
+      "difficulty": "hard",
+      "question": "Website visits: Mon = 200, Tue = 260, Wed = 220, Thu = 330, Fri = 396. On which day was the percentage increase over the previous day the highest?",
+      "options": {
+        "a": "Friday",
+        "b": "Wednesday",
+        "c": "Thursday",
+        "d": "Tuesday"
+      },
+      "your_answer": "b",
+      "your_answer_text": "Wednesday",
+      "correct_option": "c",
+      "correct_answer_text": "Thursday",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Tue +30%, Wed -15.4%, Thu +50%, Fri +20%. Thursday has the highest increase."
+    },
+    {
+      "question_number": 4,
+      "question_id": "QNT-015",
+      "category": "quantitative",
+      "difficulty": "hard",
+      "question": "How many litres of water must be added to 20 litres of a 40% acid solution to make it a 25% solution?",
+      "options": {
+        "a": "12",
+        "b": "8",
+        "c": "15",
+        "d": "10"
+      },
+      "your_answer": "b",
+      "your_answer_text": "8",
+      "correct_option": "a",
+      "correct_answer_text": "12",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Acid = 8 L. For 25% concentration the total must be 8 / 0.25 = 32 L, so add 32 - 20 = 12 L of water."
+    },
+    {
+      "question_number": 5,
+      "question_id": "QNT-003",
+      "category": "quantitative",
+      "difficulty": "easy",
+      "question": "What is the average of 12, 18, 25, 35 and 40?",
+      "options": {
+        "a": "24",
+        "b": "30",
+        "c": "26",
+        "d": "28"
+      },
+      "your_answer": "c",
+      "your_answer_text": "26",
+      "correct_option": "c",
+      "correct_answer_text": "26",
+      "is_correct": true,
+      "marks": 1,
+      "max_marks": 1,
+      "explanation": "The sum is 130 and 130 / 5 = 26."
+    },
+    {
+      "question_number": 6,
+      "question_id": "PAT-002",
+      "category": "pattern",
+      "difficulty": "easy",
+      "question": "Find the next number: 1, 4, 9, 16, ?",
+      "options": {
+        "a": "24",
+        "b": "25",
+        "c": "20",
+        "d": "36"
+      },
+      "your_answer": "c",
+      "your_answer_text": "20",
+      "correct_option": "b",
+      "correct_answer_text": "25",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "These are perfect squares: 1, 2, 3, 4 squared, so the next is 5 squared = 25."
+    },
+    {
+      "question_number": 7,
+      "question_id": "QNT-012",
+      "category": "quantitative",
+      "difficulty": "medium",
+      "question": "A shopkeeper sells an item for Rs. 720 and makes a 20% profit. What was the cost price?",
+      "options": {
+        "a": "Rs. 650",
+        "b": "Rs. 576",
+        "c": "Rs. 560",
+        "d": "Rs. 600"
+      },
+      "your_answer": "a",
+      "your_answer_text": "Rs. 650",
+      "correct_option": "d",
+      "correct_answer_text": "Rs. 600",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Selling price = 1.2 x cost, so cost = 720 / 1.2 = Rs. 600."
+    },
+    {
+      "question_number": 8,
+      "question_id": "PAT-007",
+      "category": "pattern",
+      "difficulty": "medium",
+      "question": "Find the next number: 1, 1, 2, 3, 5, 8, ?",
+      "options": {
+        "a": "11",
+        "b": "13",
+        "c": "12",
+        "d": "15"
+      },
+      "your_answer": "d",
+      "your_answer_text": "15",
+      "correct_option": "b",
+      "correct_answer_text": "13",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Fibonacci sequence: each term is the sum of the previous two (5 + 8 = 13)."
+    },
+    {
+      "question_number": 9,
+      "question_id": "LOG-009",
+      "category": "logical",
+      "difficulty": "medium",
+      "question": "In a certain code, MANGO is written as NBOHP. How is APPLE written in that code?",
+      "options": {
+        "a": "ZOOKD",
+        "b": "BQQLF",
+        "c": "BQQMF",
+        "d": "BPQMF"
+      },
+      "your_answer": "d",
+      "your_answer_text": "BPQMF",
+      "correct_option": "c",
+      "correct_answer_text": "BQQMF",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "Each letter is shifted one place forward (M to N, A to B, ...). APPLE becomes B-Q-Q-M-F."
+    },
+    {
+      "question_number": 10,
+      "question_id": "LOG-004",
+      "category": "logical",
+      "difficulty": "easy",
+      "question": "All roses are flowers. Some flowers fade quickly. Which statement is definitely true?",
+      "options": {
+        "a": "No rose fades quickly",
+        "b": "Some roses fade quickly",
+        "c": "Every rose is a flower",
+        "d": "All roses fade quickly"
+      },
+      "your_answer": "a",
+      "your_answer_text": "No rose fades quickly",
+      "correct_option": "c",
+      "correct_answer_text": "Every rose is a flower",
+      "is_correct": false,
+      "marks": 0,
+      "max_marks": 1,
+      "explanation": "This is stated directly in the first premise. The quickly fading flowers may or may not be roses."
+    }
+  ]
+}

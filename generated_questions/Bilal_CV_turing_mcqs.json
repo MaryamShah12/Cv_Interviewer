@@ -1,0 +1,95 @@
+{
+  "role": "full stack engineer",
+  "mcqs": [
+    {
+      "question": "In your E-Commerce Store, after implementing JWT authentication, users report being logged out frequently even with active sessions. You suspect an issue with token management. Which approach best addresses frequent logouts while maintaining security?",
+      "option_a": "Implement refresh tokens, storing them in HTTP-only cookies and using them to issue new access tokens.",
+      "option_b": "Increase the JWT expiration time to several days.",
+      "option_c": "Disable JWT expiration and rely solely on server-side session management.",
+      "option_d": "Store the JWT in local storage and refresh it every minute.",
+      "correct_option": "a",
+      "explanation": "Using short-lived access tokens for security and long-lived refresh tokens stored in secure HTTP-only cookies is a standard and secure practice for managing user sessions and preventing frequent logouts."
+    },
+    {
+      "question": "For the Smart Attendance System, during peak times, the face recognition backend (Python/OpenCV) struggles to process multiple concurrent video streams, leading to delays. Which strategy would most effectively improve the system's ability to handle higher loads?",
+      "option_a": "Reduce the number of recognized faces per frame to speed up individual processing.",
+      "option_b": "Switch from OpenCV to a proprietary cloud-based face recognition API.",
+      "option_c": "Implement a message queue (e.g., RabbitMQ) to buffer incoming frames and distribute processing across multiple worker instances.",
+      "option_d": "Increase the resolution of the input video streams to provide more detail for recognition.",
+      "correct_option": "c",
+      "explanation": "A message queue allows decoupling the frame ingestion from processing, enabling horizontal scaling of the recognition service by adding more worker instances to consume messages from the queue, thus handling higher concurrent loads."
+    },
+    {
+      "question": "When designing the MongoDB schema for your E-Commerce Store, you need to represent products that come in various sizes and colors, each with its own inventory count. Which schema design approach is generally most efficient for querying and updating inventory for specific variations?",
+      "option_a": "Use a relational database instead of MongoDB for this specific requirement.",
+      "option_b": "Store sizes and colors as separate arrays of strings within the product document, with inventory as a separate field.",
+      "option_c": "Embed an array of sub-documents within the product document, where each sub-document represents a variation (size, color) and includes its own inventory count.",
+      "option_d": "Create separate product documents for each size and color combination.",
+      "correct_option": "c",
+      "explanation": "Embedding variations as sub-documents allows for atomic updates to specific variation inventory counts and keeps related product data together, which is efficient for typical e-commerce queries."
+    },
+    {
+      "question": "In your E-Commerce Store, the shopping cart state needs to be accessible and modifiable from various components (e.g., product page, header, checkout) and persist across page reloads. Which React approach is best suited for this requirement?",
+      "option_a": "Store the entire cart state in a global JavaScript variable.",
+      "option_b": "Use React Context API to provide the cart state and update functions to consuming components, combined with local storage for persistence.",
+      "option_c": "Fetch the cart contents from the backend database on every component render.",
+      "option_d": "Pass cart state down through props from the top-level App component to all relevant children.",
+      "correct_option": "b",
+      "explanation": "React Context API provides an efficient way to share state across a component tree without prop-drilling, and combining it with local storage (or a backend API for logged-in users) ensures persistence across reloads."
+    },
+    {
+      "question": "In your MERN stack E-Commerce Store, an unhandled error in an API route (e.g., a database connection issue) causes the entire Node.js server to crash. How would you implement a robust error handling strategy to prevent server crashes and provide meaningful feedback to the client?",
+      "option_a": "Send a generic \"Internal Server Error\" HTML page for all errors.",
+      "option_b": "Rely on `process.on('uncaughtException')` to restart the server automatically.",
+      "option_c": "Wrap every single asynchronous operation in a try-catch block.",
+      "option_d": "Use a centralized error-handling middleware function in Express that catches errors, logs them, and sends a standardized JSON error response.",
+      "correct_option": "d",
+      "explanation": "A centralized error-handling middleware in Express is the standard and most maintainable way to catch errors from routes and other middleware, log them, and send consistent, structured error responses to clients without crashing the server."
+    },
+    {
+      "question": "The Smart Attendance System stores sensitive biometric data (face embeddings) for each student. What is the most critical security measure to implement to protect this data from unauthorized access or breaches?",
+      "option_a": "Use a simple password for the database where embeddings are stored.",
+      "option_b": "Store the embeddings as plain text files on the server.",
+      "option_c": "Implement strong encryption for the embeddings both at rest in the database and in transit over networks.",
+      "option_d": "Only allow access to the attendance dashboard from within the local network.",
+      "correct_option": "c",
+      "explanation": "Encrypting sensitive data like biometric embeddings both when stored (at rest) and when being transmitted (in transit) is fundamental for data privacy and security, significantly reducing the risk of unauthorized access even if a breach occurs."
+    },
+    {
+      "question": "Your Weather App frequently calls the OpenWeather API. To improve performance, reduce API costs, and handle potential network intermittency, what is the most effective strategy for managing API requests?",
+      "option_a": "Increase the API request frequency to ensure the freshest data is always available.",
+      "option_b": "Make a new API request every time the user opens the app, regardless of previous data.",
+      "option_c": "Store all historical weather data in your own MongoDB database.",
+      "option_d": "Implement client-side caching of weather data with a reasonable expiry time (e.g., 10-15 minutes) and display cached data during network failures.",
+      "correct_option": "d",
+      "explanation": "Client-side caching with an expiry significantly reduces redundant API calls, improves perceived performance by serving data instantly, and provides a fallback during temporary network issues, aligning with best practices for external API consumption."
+    },
+    {
+      "question": "While developing your E-Commerce Store, your React frontend is unable to fetch data from your Node.js/Express backend, and the browser console shows a \"CORS policy\" error. What is the most direct solution to resolve this issue?",
+      "option_a": "Configure the Express backend to include appropriate CORS headers (e.g., `Access-Control-Allow-Origin`) to permit requests from the frontend's origin.",
+      "option_b": "Add a `proxy` entry in the React application's `package.json` file.",
+      "option_c": "Change the frontend's port number to match the backend's port number.",
+      "option_d": "Disable browser security settings for the development environment.",
+      "correct_option": "a",
+      "explanation": "CORS errors occur when a browser prevents a web page from making requests to a different origin. The solution is to configure the backend (Express in this case) to explicitly allow requests from the frontend's origin by setting the correct CORS headers."
+    },
+    {
+      "question": "You're using Tailwind CSS in your React projects (like the E-Commerce Store). To maintain a clean codebase and promote reusability for common UI elements (e.g., buttons, cards), what is the recommended approach for applying Tailwind styles?",
+      "option_a": "Create custom CSS files for each component and manually copy-paste Tailwind utility classes into them.",
+      "option_b": "Define reusable React components that encapsulate specific Tailwind utility classes and accept props for dynamic styling or content.",
+      "option_c": "Inline all Tailwind classes directly into every HTML element where they are needed.",
+      "option_d": "Use a CSS-in-JS library to write all styles in JavaScript objects.",
+      "correct_option": "b",
+      "explanation": "Creating reusable React components that abstract away Tailwind utility classes is the standard and most effective way to manage styles, promote consistency, and keep the codebase clean when using Tailwind CSS in a component-based framework."
+    },
+    {
+      "question": "In a collaborative project like the Smart Attendance System, your team uses Git and GitHub. A team member pushes a new feature branch, and when you try to merge it into `main`, you encounter a merge conflict. What is the most appropriate next step to resolve this conflict and integrate the changes?",
+      "option_a": "Pull the remote `main` branch into your feature branch, manually resolve the conflict markers in your code editor, commit the resolution, and then merge the feature branch into `main`.",
+      "option_b": "Delete your local `main` branch and re-clone the repository from GitHub.",
+      "option_c": "Force push your local `main` branch to overwrite the remote `main` and the conflicting changes.",
+      "option_d": "Ask the team member to revert their changes and push again.",
+      "correct_option": "a",
+      "explanation": "The standard procedure for resolving merge conflicts is to pull the latest changes from the target branch (e.g., `main`) into your feature branch, manually resolve the conflict markers in the affected files, commit the resolution, and then proceed with the merge."
+    }
+  ]
+}
